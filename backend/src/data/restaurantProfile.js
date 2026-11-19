@@ -21,6 +21,7 @@ const restaurantProfile = {
     "Mutton Kobiraji with seasoned Herb Yogurt",
     "Daab Chingri Risotto",
     "Baked Rasagolla Cheesecake",
+    "Choco Lava Sandesh",
     "Mishti Doi Panna Cotta"
   ],
   vegOptions: true,

@@ -1,6 +1,9 @@
+
 import Groq from "groq-sdk";
 import dotenv from "dotenv";
+
 dotenv.config();
+
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
@@ -8,7 +11,7 @@ const groq = new Groq({
 export const getAIResponse = async (message) => {
   try {
     const completion = await groq.chat.completions.create({
-      model: "llama-3.1-8b-instant",   // ✅ UPDATED MODEL
+      model: "openai/gpt-oss-20b",
       messages: [
         {
           role: "system",
